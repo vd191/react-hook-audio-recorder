@@ -1,6 +1,6 @@
 # react-hook-recorder
 
-> 
+>
 
 [![NPM](https://img.shields.io/npm/v/react-hook-recorder.svg)](https://www.npmjs.com/package/react-hook-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -14,13 +14,17 @@ npm install --save react-hook-recorder
 
 ```jsx
 import React, { Component } from 'react'
-
-import { useMyHook } from 'react-hook-recorder'
+import { useRecorder } from 'react-hook-recorder';
 
 const Example = () => {
-  const example = useMyHook()
+  const [audioURL, isRecording, startRecording, stopRecording] = useRecorder();
   return (
-    <div>{example}</div>
+    <div>
+      <p>{isRecording}</p>
+      <button onClick={startRecording}>
+      <button onClick={stopRecording}>
+      <audio src={audioURL} />
+    </div>
   )
 }
 ```
