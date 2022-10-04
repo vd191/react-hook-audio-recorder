@@ -1,20 +1,20 @@
-# react-hook-recorder
+# react-hook-audio-recorder
 
 >
 
-[![NPM](https://img.shields.io/npm/v/react-hook-recorder.svg)](https://www.npmjs.com/package/react-hook-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-hook-audio-recorder.svg)](https://www.npmjs.com/package/react-hook-audio-recorder) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save react-hook-recorder
+npm install --save react-hook-audio-recorder
 ```
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
-import { useRecorder } from 'react-hook-recorder';
+import { useRecorder } from 'react-hook-audio-recorder';
 
 const Example = () => {
   const [audioURL, isRecording, startRecording, stopRecording] = useRecorder();
